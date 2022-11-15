@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Managements from "./components/Managements";
-import { Neworders } from "./components/Neworders";
+import OrderManagement from "./components/OrderManagement";
+import  Neworder  from "./components/Neworder";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Managements />} />
-          <Route path="/neworders" element={<Neworders />} />
+          <Route path="/" element={<OrderManagement />} />
+          <Route path="/neworders" element={<Neworder />} />
         </Routes>
       </Router>
     </div>
