@@ -12,7 +12,7 @@ export const orders = [
     date: "2022-06-01",
   },
   {
-    id: 1,
+    id: 3,
     description: "order for customer 2",
     product: "3",
     date: "2022-06-01",

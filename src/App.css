@@ -75,3 +75,6 @@ td {
 .button_neworder {
   padding: 10px;
 }
+.error {
+  color: red;
+}

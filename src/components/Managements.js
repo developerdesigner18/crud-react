@@ -34,20 +34,24 @@ const Managements = () => {
       </div>
       <div>
         <table className="table-row">
-          <tr>
-            <th>Order id</th>
-            <th>Order Description</th>
-            <th>Count of product</th>
-            <th>Created Date</th>
-          </tr>
-          {filterData.map((order) => (
+          <thead>
             <tr>
-              <td>{order.id}</td>
-              <td>{order.description}</td>
-              <td>{order.product}</td>
-              <td>{order.date}</td>
+              <th>Order id</th>
+              <th>Order Description</th>
+              <th>Count of product</th>
+              <th>Created Date</th>
             </tr>
-          ))}
+          </thead>
+          <tbody>
+            {filterData.map((order) => (
+              <tr key={order.id}>
+                <td>{order.id}</td>
+                <td>{order.description}</td>
+                <td>{order.product}</td>
+                <td>{order.date}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
       <button className="button_manage" onClick={neworder}>
